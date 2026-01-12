@@ -11,6 +11,7 @@
 body {
   min-height: 100vh;
   background: url("assets/hero.jpeg") center / cover no-repeat fixed;
+   background-position: center top;
   font-family: "Libre Baskerville", serif;
   color: #f5f5f5;
   line-height: 1.6;
