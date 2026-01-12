@@ -113,7 +113,8 @@ h1 {
   transition: opacity 0.2s ease;
 }
 
-.single:hover {
+.single:hover,
+.single:focus-visible {
   opacity: 0.7;
 }
 
@@ -123,12 +124,22 @@ h1 {
   object-fit: cover;
   border-radius: 4px;
   margin-bottom: 0.35rem;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .single span {
   text-align: center;
   line-height: 1.2;
 }
+
+@media (hover: hover) {
+  .single:hover img {
+    transform: translateY(-2px);
+  }
+}
+
 
 /* =====================
    Social Links
@@ -178,18 +189,18 @@ h1 {
    Mobile Tweaks
 ===================== */
 
-
 @media (max-width: 600px) {
 
+  /* Layout + vertical centering */
   .content {
-    min-height: 100svh;     /* ← restores vertical centering space */
+    min-height: 100svh;
     padding: 2rem 1.25rem;
 
     flex-direction: column;
-    justify-content: center; /* ← centers hero vertically */
+    justify-content: center;
   }
-}
 
+  /* Singles grid */
   .singles {
     gap: 0.75rem;
   }
@@ -202,28 +213,25 @@ h1 {
   .single span {
     font-size: 0.7rem;
   }
-}
 
-  /* Slightly smaller hero typography */
+  /* Hero text + logo scaling */
   .descriptor {
     font-size: 0.85rem;
     margin-bottom: 2rem;
   }
 
-  /* Scale logo down ~25% */
   .logo {
     width: 320px;
   }
 
-  /* Allow links to wrap cleanly */
+  /* Social links */
   .links {
     flex-wrap: wrap;
     row-gap: 0.75rem;
   }
 
-  /* Footer flows naturally on mobile */
+  /* Footer spacing on mobile */
   .footer {
-    margin-top: 2rem;   /* space below hero */
+    margin-top: 2rem;
   }
 }
-
