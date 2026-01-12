@@ -39,9 +39,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 
   text-align: center;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  margin-top: auto;
+  padding-bottom: 2rem;   /* try 3rem–6rem */
 }
 
 
