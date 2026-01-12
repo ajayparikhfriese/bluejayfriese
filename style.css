@@ -91,7 +91,7 @@ h1 {
   flex-wrap: wrap;
   gap: 1.25rem;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
 }
 
 .links a {
@@ -116,7 +116,7 @@ h1 {
 }
 
 .mailing-list p {
-  font-size: 0.85rem;
+  font-size: 1.1rem;
   margin-bottom: 0.30rem;
   opacity: 0.85;
 
