@@ -119,6 +119,10 @@ h1 {
   font-size: 0.85rem;
   margin-bottom: 0.38rem;
   opacity: 0.85;
+
+   .mailing-list input::placeholder {
+  color: rgba(245, 245, 245, 0.6); 
+      
 }
 
 /* =====================
