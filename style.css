@@ -31,11 +31,11 @@ body {
 .content {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
 }
 
 .hero {
   margin: auto;
-  text-align: center;
 }
 
 .footer {
