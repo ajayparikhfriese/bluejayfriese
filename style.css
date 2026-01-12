@@ -115,12 +115,14 @@ h1 {
 }
 
 .mailing-list p {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   margin-bottom: 0.30rem;
   opacity: 0.85;
 
    .mailing-list input::placeholder {
-  color: rgba(245, 245, 245, 0.6); 
+  color: rgba(245, 245, 245, 0.5); 
+  font-size: 0.9rem;
+}
       
 }
 
