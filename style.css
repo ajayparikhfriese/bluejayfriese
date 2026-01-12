@@ -142,15 +142,17 @@ h1 {
 
 @media (max-width: 600px) {
 
-  /* Reduce horizontal edge pressure */
   .content {
     padding: 2rem 1.25rem;
-    min-height: auto; /* ← removes extra grey space */
+    min-height: auto;
+
+    flex-direction: column;      /* ← THIS IS THE FIX */
+    justify-content: flex-start; /* stack from top, not center */
   }
 
   /* Slightly smaller hero typography */
   .descriptor {
-    font-size: 0.85rem; /* ~10% smaller */
+    font-size: 0.85rem;
     margin-bottom: 2rem;
   }
 
@@ -159,18 +161,13 @@ h1 {
     width: 320px;
   }
 
-  /* Headings (if any remain) */
-  h1 {
-    font-size: 2rem;
-  }
-
   /* Allow links to wrap cleanly */
   .links {
     flex-wrap: wrap;
     row-gap: 0.75rem;
   }
 
-  /* Footer should flow normally on mobile */
+  /* Footer flows naturally on mobile */
   .footer {
     position: static;
     transform: none;
@@ -178,3 +175,4 @@ h1 {
     padding-bottom: 0;
   }
 }
+
