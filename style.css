@@ -112,12 +112,12 @@ h1 {
 ===================== */
 
 .mailing-list {
-  margin-top: 1rem;
+  margin-top: 1.2rem;
 }
 
 .mailing-list p {
   font-size: 0.85rem;
-  margin-bottom: 0.38rem;
+  margin-bottom: 0.30rem;
   opacity: 0.85;
 
    .mailing-list input::placeholder {
