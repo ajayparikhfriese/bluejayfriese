@@ -51,7 +51,7 @@ body {
 
 .top-quote {
   font-style: italic;
-  font-size: 1rem;
+  font-size: 0.95rem;
   opacity: 0.85;
   margin-bottom: 3rem;
 }
@@ -64,7 +64,7 @@ h1 {
 }
 
 .descriptor {
-  max-width: 600px;
+  max-width: 1100px;
   font-size: 0.95rem;
   opacity: 0.9;
   margin-bottom: 2.5rem;
