@@ -261,12 +261,12 @@ h1 {
 
   /* Singles grid */
   .singles {
-    gap: 0.75rem;
+    gap: 0.90rem;
   }
 
   .single img {
-    width: 58px;
-    height: 58px;
+    width: 65px;
+    height: 65px;
   }
 
   .single span {
@@ -276,7 +276,7 @@ h1 {
   /* Hero text + logo scaling */
   .descriptor {
     font-size: 0.85rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .logo {
@@ -293,6 +293,6 @@ h1 {
   .footer {
     position: static;       /* ← stops overlap */
     transform: none;
-    margin-top: 4rem;
+    margin-top: 6rem;
   }
 }
