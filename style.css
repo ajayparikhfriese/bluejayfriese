@@ -115,6 +115,7 @@ h1 {
   font-size: 0.95rem;
   line-height: 1.8;         /* slower pace */
   opacity: 0.9;
+  transform: translateY(-0.1rem);
 }
 
 /* =====================
