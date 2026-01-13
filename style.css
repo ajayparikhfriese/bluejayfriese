@@ -255,13 +255,13 @@ h1 {
 @media (max-width: 600px) {
 
   /* Layout + vertical centering */
-  .content {
+     .content {
     min-height: 100svh;
-    padding: 2rem 1.25rem;
-
+    padding: 4rem 1.25rem 2rem;  /* ↑ top | sides | bottom */
     flex-direction: column;
     justify-content: center;
   }
+}
 
   /* Singles grid */
   .singles {
