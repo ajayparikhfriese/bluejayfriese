@@ -255,17 +255,17 @@ h1 {
 @media (max-width: 600px) {
 
   /* Layout + vertical centering */
-     .content {
+  .content {
     min-height: 100svh;
-    padding: 7.5rem 1.25rem 2rem;  /* ↑ top | sides | bottom */
+    padding: 7.5rem 1.25rem 2rem;
     flex-direction: column;
     justify-content: center;
   }
-}
 
   /* Singles grid */
   .singles {
     gap: 0.90rem;
+    transform: none;
   }
 
   .single img {
@@ -295,8 +295,9 @@ h1 {
 
   /* Footer spacing on mobile */
   .footer {
-    position: static;       /* ← stops overlap */
+    position: static;
     transform: none;
     margin-top: 6rem;
   }
 }
+
