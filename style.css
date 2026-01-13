@@ -137,6 +137,7 @@ h1 {
   gap: 1.5rem;             /* more air */
   justify-content: center;
   transform: translateX(-0.08rem); /* intentional optical centering */
+  transform: translateY(0.25rem);
 }
 
 .single {
