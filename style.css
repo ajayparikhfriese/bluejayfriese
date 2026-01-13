@@ -57,10 +57,21 @@ body {
 }
 
 .booking {
-  margin-top: 0.25rem;
-  font-size: 0.7rem;
-  opacity: 0.55;
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  opacity: 0.6;
 }
+
+.booking a {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+.booking a:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
 
 /* =====================
    Typography
@@ -298,6 +309,12 @@ h1 {
     flex-wrap: wrap;
     row-gap: 0.75rem;
   }
+
+     .booking {
+    font-size: 0.7rem;
+    opacity: 0.5;
+  }
+}
 
   /* Footer spacing on mobile */
   .footer {
