@@ -19,13 +19,12 @@
 
 body {
   min-height: 100vh;
-  background-color: #0f0f0f; /* fallback if image fails */
+  background-color: #0f0f0f; /* fallback */
   background: url("assets/hero.jpeg") center 4% / cover no-repeat fixed;
   font-family: "Libre Baskerville", serif;
   color: #f5f5f5;
   line-height: 1.6;
 
-  /* Font smoothing */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -56,13 +55,17 @@ body {
   text-align: center;
 }
 
+/* HERO — breathing room added */
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  gap: 1.6rem;              /* MAIN breathing control */
   transform: translateY(2rem);
 }
 
+/* FOOTER */
 .footer {
   position: absolute;
   bottom: 1.2rem;
@@ -106,9 +109,11 @@ h1 {
   margin-bottom: 1rem;
 }
 
+/* Descriptor — calmer, narrower */
 .descriptor {
-  max-width: 1100px;
+  max-width: 680px;         /* calmer reading width */
   font-size: 0.95rem;
+  line-height: 1.8;         /* slower pace */
   opacity: 0.9;
 }
 
@@ -120,6 +125,7 @@ h1 {
   width: 440px;
   max-width: 85%;
   height: auto;
+  margin-bottom: 0.6rem;   /* separation from text */
 }
 
 /* =====================
@@ -128,8 +134,8 @@ h1 {
 
 .singles {
   display: flex;
-  gap: 1.25rem;
-  margin-top: 1rem;
+  gap: 1.5rem;             /* more air */
+  margin-top: 0.6rem;
   justify-content: center;
   transform: translateX(-0.08rem); /* intentional optical centering */
 }
@@ -181,4 +187,160 @@ h1 {
 }
 
 .mailing-list p {
-  font-si
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  opacity: 0.85;
+}
+
+.mailing-list input {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #f5f5f5;
+
+  padding: 0.6rem 0.75rem;
+  font-size: 0.9rem;
+  font-family: "Libre Baskerville", serif;
+
+  outline: none;
+}
+
+.mailing-list input[type="email"] {
+  padding: 0.45rem 0.6rem;
+  font-size: 0.85rem;
+  width: 220px;
+  max-width: 100%;
+}
+
+.mailing-list input[type="submit"] {
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #f5f5f5;
+
+  font-family: "Libre Baskerville", serif;
+  font-size: 0.8rem;
+
+  padding: 0.45rem 0.9rem;
+  margin-left: 0.4rem;
+
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.mailing-list input[type="submit"]:hover {
+  background: rgba(255, 255, 255, 0.28);
+  opacity: 0.9;
+}
+
+.mailing-list input::placeholder {
+  color: rgba(245, 245, 245, 0.7);
+}
+
+.mailing-list input:focus {
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.mailing-list form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =====================
+   Social Links
+===================== */
+
+.links {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.6rem;
+  margin-bottom: 0.2rem;
+  white-space: nowrap;
+}
+
+.links a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 2px;
+  transition: opacity 0.2s ease;
+}
+
+.links a:hover {
+  opacity: 0.7;
+}
+
+/* =====================
+   Focus visibility
+===================== */
+
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid rgba(255,255,255,0.6);
+  outline-offset: 2px;
+}
+
+/* =====================
+   Mobile Tweaks
+===================== */
+
+@media (max-width: 600px) {
+
+  .content {
+    min-height: 100svh;
+    padding: 7.5rem 1.25rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero {
+    gap: 1.25rem;          /* calmer but tighter */
+  }
+
+  .descriptor {
+    max-width: 100%;
+    font-size: 0.85rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+
+  .logo {
+    width: 320px;
+  }
+
+  .singles {
+    gap: 0.9rem;
+    margin-top: 0.8rem;
+    transform: none;
+  }
+
+  .single img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .single span {
+    font-size: 0.7rem;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    row-gap: 0.75rem;
+  }
+
+  .booking {
+    font-size: 0.7rem;
+    opacity: 0.5;
+  }
+
+  .footer {
+    position: static;
+    transform: none;
+    margin-top: 6rem;
+  }
+}
