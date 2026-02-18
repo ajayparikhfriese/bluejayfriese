@@ -135,16 +135,20 @@ h1 {
 
 .singles {
   display: flex;
-  gap: 2rem;             /* more air */
+  gap: 1.5rem;
   justify-content: center;
-  transform: translateX(-0.08rem); /* intentional optical centering */
-  transform: translateY(0.3rem);
+  align-items: flex-start; /* keeps tops aligned */
+  transform: translateX(-0.08rem) translateY(0.3rem); /* combine transforms */
 }
 
 .single {
+  width: 90px;            /* all singles get same footprint */
+  flex: 0 0 90px;         /* prevents long title widening the column */
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
   text-decoration: none;
   color: #f5f5f5;
   font-size: 0.75rem;
@@ -169,8 +173,13 @@ h1 {
 }
 
 .single span {
+  display: block;
+  max-width: 90px;
   text-align: center;
   line-height: 1.2;
+
+  white-space: normal;      /* allow wrapping */
+  overflow-wrap: anywhere;  /* prevents overflow */
 }
 
 @media (hover: hover) {
@@ -300,7 +309,7 @@ input:focus-visible {
   }
 
   .hero {
-    gap: 1.25rem;          /* calmer but tighter */
+    gap: 1.25rem;
   }
 
   .descriptor {
@@ -320,6 +329,12 @@ input:focus-visible {
     transform: none;
   }
 
+  /* make each tile the same width on mobile */
+  .single {
+    width: 78px;
+    flex: 0 0 78px;
+  }
+
   .single img {
     width: 65px;
     height: 65px;
@@ -327,6 +342,7 @@ input:focus-visible {
 
   .single span {
     font-size: 0.7rem;
+    max-width: 78px;
   }
 
   .links {
