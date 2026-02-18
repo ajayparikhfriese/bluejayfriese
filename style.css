@@ -135,7 +135,7 @@ h1 {
 
 .singles {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.3rem;
   justify-content: center;
   align-items: flex-start; /* keeps tops aligned */
   transform: translateX(-0.08rem) translateY(0.3rem); /* combine transforms */
