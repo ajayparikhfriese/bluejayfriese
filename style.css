@@ -301,63 +301,77 @@ input:focus-visible {
 
 @media (max-width: 600px) {
 
+  /* iOS Safari + fixed bg can get weird; this helps */
+  body {
+    background-attachment: scroll;
+  }
+
   .content {
     min-height: 100svh;
-    padding: 7.5rem 1.25rem 2rem;
+    padding: 6.5rem 1rem 2rem; /* slightly less side pressure */
     flex-direction: column;
     justify-content: center;
   }
 
+  /* stop desktop nudges from making mobile feel off */
   .hero {
-    gap: 1.25rem;
-  }
-
-  .descriptor {
-    max-width: 100%;
-    font-size: 0.85rem;
-    line-height: 1.7;
-    margin-bottom: 1rem;
+    transform: none;
+    gap: 1.1rem;
   }
 
   .logo {
-    width: 320px;
-  }
-
-  .singles {
-    gap: 0.9rem;
-    margin-top: 0.8rem;
+    width: 300px;  /* tweak to taste */
+    max-width: 90%;
     transform: none;
   }
 
-  /* make each tile the same width on mobile */
+  /* THIS is the main “Help!” fix */
+  .descriptor {
+    max-width: 100%;
+    padding: 0 0.75rem;     /* gives breathing room so it can wrap nicely */
+    font-size: 0.78rem;     /* smaller so it doesn’t feel like a banner */
+    line-height: 1.55;
+    transform: none;
+  }
+
+  /* Let singles wrap into rows and stay centered */
+  .singles {
+    display: flex;
+    flex-wrap: wrap;        /* ✅ key */
+    justify-content: center;
+    gap: 0.9rem;
+    margin-top: 0.9rem;
+    transform: none;
+  }
+
+  /* fixed footprint per tile (prevents “one title makes one column wider”) */
   .single {
     width: 78px;
     flex: 0 0 78px;
   }
 
   .single img {
-    width: 65px;
-    height: 65px;
+    width: 64px;
+    height: 64px;
   }
 
   .single span {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     max-width: 78px;
+    line-height: 1.15;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .footer {
+    position: static;
+    transform: none;
+    margin-top: 3.5rem;
   }
 
   .links {
     flex-wrap: wrap;
     row-gap: 0.75rem;
   }
-
-  .booking {
-    font-size: 0.7rem;
-    opacity: 0.5;
-  }
-
-  .footer {
-    position: static;
-    transform: none;
-    margin-top: 6rem;
-  }
 }
+
