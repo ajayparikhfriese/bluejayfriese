@@ -285,19 +285,29 @@ h1 {
 }
 
 .partner-logos {
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.2rem;
   flex-wrap: wrap;
 }
 
 .partner-logos img {
-  height: 28px;
+  height: 30px;
   width: auto;
   display: block;
-  opacity: 0.95;
+}
+
+@media (max-width: 600px) {
+  .partner-logos {
+    gap: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  .partner-logos img {
+    height: 24px;
+  }
 }
 
 /* =====================
