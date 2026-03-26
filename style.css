@@ -2,6 +2,12 @@
    Global
 ===================== */
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /* Visually hidden (SEO + accessibility) */
 .visually-hidden {
   position: absolute;
@@ -9,12 +15,6 @@
   height: 1px;
   width: 1px;
   overflow: hidden;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -32,7 +32,7 @@ body {
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.48);
   z-index: 0;
   pointer-events: none;
 }
@@ -47,7 +47,7 @@ body {
   min-height: 100vh;
   max-width: 900px;
   margin: 0 auto;
-  padding: 0.75rem 1rem 1rem;
+  padding: 0.9rem 1rem 1rem;
 
   display: flex;
   flex-direction: column;
@@ -61,33 +61,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.72rem;
-  margin-top: 20vh;
+  gap: 0.75rem;
+  margin-top: 21vh;
   margin-bottom: 0;
   transform: none;
 }
 
 .footer {
   width: 100%;
-  margin-top: 2.4rem;
-  padding-top: 0;
-}
-
-/* Booking email */
-.booking {
-  margin-top: 0.55rem;
-  font-size: 0.76rem;
-  opacity: 0.68;
-}
-
-.booking a {
-  color: #f5f5f5;
-  text-decoration: none;
-}
-
-.booking a:hover {
-  text-decoration: underline;
-  opacity: 0.85;
+  margin-top: auto;
+  padding-top: 1.2rem;
 }
 
 /* =====================
@@ -110,10 +93,10 @@ h1 {
 }
 
 .descriptor {
-  max-width: 520px;
-  font-size: 0.88rem;
-  line-height: 1.38;
-  opacity: 0.92;
+  max-width: 560px;
+  font-size: 0.9rem;
+  line-height: 1.34;
+  opacity: 0.94;
   transform: none;
 }
 
@@ -135,10 +118,10 @@ h1 {
 
 .releases {
   display: flex;
-  gap: 0.7rem;
+  gap: 0.65rem;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 0.08rem;
+  margin-top: 0.12rem;
 }
 
 .release {
@@ -152,13 +135,13 @@ h1 {
   text-decoration: none;
   color: #f5f5f5;
   font-size: 0.75rem;
-  opacity: 0.92;
+  opacity: 0.94;
   transition: opacity 0.2s ease;
 }
 
 .release:hover,
 .release:focus-visible {
-  opacity: 0.78;
+  opacity: 0.8;
 }
 
 .release img {
@@ -173,11 +156,11 @@ h1 {
 
 .release span {
   display: block;
-  max-width: 136px;
+  max-width: none;
   text-align: center;
-  line-height: 1.18;
-  white-space: normal;
-  overflow-wrap: anywhere;
+  line-height: 1.14;
+  white-space: nowrap;
+  overflow-wrap: normal;
 }
 
 @media (hover: hover) {
@@ -192,13 +175,13 @@ h1 {
 ===================== */
 
 .mailing-list {
-  margin-top: 0.2rem;
+  margin-top: 0;
 }
 
 .mailing-list p {
   font-size: 0.88rem;
-  margin-bottom: 0.4rem;
-  opacity: 0.88;
+  margin-bottom: 0.38rem;
+  opacity: 0.9;
 }
 
 .mailing-list form {
@@ -220,9 +203,9 @@ h1 {
 }
 
 .mailing-list input[type="email"] {
-  width: 220px;
+  width: 250px;
   max-width: 100%;
-  padding: 0.45rem 0.6rem;
+  padding: 0.46rem 0.65rem;
   font-size: 0.84rem;
 }
 
@@ -232,7 +215,7 @@ h1 {
   color: #f5f5f5;
   font-family: "Libre Baskerville", serif;
   font-size: 0.78rem;
-  padding: 0.45rem 0.85rem;
+  padding: 0.46rem 0.9rem;
   margin-left: 0;
   border-radius: 4px;
   cursor: pointer;
@@ -254,14 +237,34 @@ h1 {
 }
 
 /* =====================
+   Booking
+===================== */
+
+.booking {
+  margin-top: 0.5rem;
+  font-size: 0.76rem;
+  opacity: 0.7;
+}
+
+.booking a {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+.booking a:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+/* =====================
    Support Logos
 ===================== */
 
 .support-label {
-  margin-top: 0.9rem;
-  margin-bottom: 0.35rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
   font-size: 0.78rem;
-  opacity: 0.8;
+  opacity: 0.82;
 }
 
 .partner-logos {
@@ -269,7 +272,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.9rem;
+  gap: 0.85rem;
   flex-wrap: wrap;
 }
 
@@ -297,19 +300,19 @@ h1 {
 }
 
 .logo-martin {
-  height: 30px;
+  height: 29px;
 }
 
 .logo-johnpearse {
-  height: 30px;
+  height: 29px;
 }
 
 .logo-clayton {
-  height: 44px;
+  height: 42px;
 }
 
 .logo-paige {
-  height: 18px;
+  height: 17px;
 }
 
 /* =====================
@@ -321,7 +324,8 @@ h1 {
   flex-wrap: wrap;
   gap: 0.7rem;
   justify-content: center;
-  margin-top: 0.9rem;
+  margin-top: auto;
+  padding-top: 0.95rem;
   margin-bottom: 0;
 }
 
@@ -349,12 +353,12 @@ input:focus-visible {
 }
 
 /* =====================
-   Mobile Tweaks
+   Mobile
 ===================== */
 
 @media (max-width: 600px) {
   body {
-    background: url("assets/new-hero.jpeg") center 30% / cover no-repeat;
+    background: url("assets/new-hero.jpeg") center 14% / cover no-repeat;
     background-attachment: scroll;
   }
 
@@ -362,12 +366,12 @@ input:focus-visible {
     min-height: 100svh;
     max-width: 900px;
     margin: 0 auto;
-    padding: 1rem 0.9rem 0.85rem;
+    padding: 0.9rem 0.9rem 0.85rem;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
     text-align: center;
   }
@@ -376,23 +380,22 @@ input:focus-visible {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.6rem;
-    margin-top: 0;
+    gap: 0.55rem;
+    margin-top: 10vh;
     margin-bottom: 0;
-    transform: translateY(-0.2rem);
+    transform: none;
   }
 
   .logo {
-    width: 235px;
-    max-width: 84%;
-    transform: none;
+    width: 255px;
+    max-width: 86%;
   }
 
   .descriptor {
     max-width: 100%;
-    padding: 0 0.45rem;
+    padding: 0 0.35rem;
     font-size: 0.72rem;
-    line-height: 1.35;
+    line-height: 1.26;
     margin: 0;
   }
 
@@ -400,80 +403,58 @@ input:focus-visible {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.55rem;
-    margin-top: 0.2rem;
-    transform: none;
+    gap: 0.45rem;
+    margin-top: 0.12rem;
   }
 
   .release {
-    width: 116px;
-    flex: 0 0 116px;
+    width: 118px;
+    flex: 0 0 118px;
   }
 
   .release img {
-    width: 116px;
-    height: 116px;
+    width: 118px;
+    height: 118px;
   }
 
   .release span {
-    max-width: 122px;
-    font-size: 0.68rem;
-    line-height: 1.08;
+    max-width: 150px;
     white-space: normal;
+    font-size: 0.66rem;
+    line-height: 1.05;
     overflow-wrap: anywhere;
   }
 
   .footer {
     width: 100%;
     margin-top: auto;
-    padding-top: 0.8rem;
+    padding-top: 1rem;
     position: static;
     transform: none;
   }
 
-  .mailing-list {
-    margin-top: 0.15rem;
-  }
-
   .mailing-list p {
     font-size: 0.74rem;
-    margin-bottom: 0.45rem;
+    margin-bottom: 0.4rem;
   }
 
   .mailing-list form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 0.4rem;
   }
 
   .mailing-list input[type="email"] {
     width: 185px;
     font-size: 0.76rem;
-    padding: 0.64rem 0.72rem;
+    padding: 0.62rem 0.72rem;
   }
 
   .mailing-list input[type="submit"] {
     font-size: 0.7rem;
-    padding: 0.64rem 0.85rem;
-  }
-
-  .links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.35rem 0.6rem;
-    margin-top: 0.45rem;
-    margin-bottom: 0.1rem;
-  }
-
-  .links a {
-    font-size: 0.66rem;
-    padding-bottom: 1px;
+    padding: 0.62rem 0.82rem;
   }
 
   .booking {
-    margin-top: 0.35rem;
+    margin-top: 0.38rem;
   }
 
   .booking a {
@@ -481,14 +462,13 @@ input:focus-visible {
   }
 
   .support-label {
-    margin-top: 0.65rem;
-    margin-bottom: 0.3rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.28rem;
     font-size: 0.68rem;
   }
 
   .partner-logos {
     gap: 0.55rem;
-    margin-top: 0;
   }
 
   .logo-martin {
@@ -505,5 +485,20 @@ input:focus-visible {
 
   .logo-paige {
     height: 13px;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.35rem 0.6rem;
+    margin-top: 0.8rem;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .links a {
+    font-size: 0.66rem;
+    padding-bottom: 1px;
   }
 }
