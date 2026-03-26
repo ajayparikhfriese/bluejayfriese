@@ -299,25 +299,23 @@ h1 {
 }
 
 .partner-logos img {
-  height: 30px;
   width: auto;
   display: block;
 }
 
-/* individual logo tuning */
-.logo-martin_logo_white.webp {
+.logo-martin {
   height: 28px;
 }
 
-.logo-johnpearse_logo_gold.png {
+.logo-johnpearse {
   height: 28px;
 }
 
-.logo-clayton-logo.png {
+.logo-clayton {
   height: 40px;
 }
 
-.logo-paige-capo-logo-white.png {
+.logo-paige {
   height: 22px;
 }
 
@@ -370,11 +368,37 @@ input:focus-visible {
     transform: none;
   }
 
-   @media (max-width: 600px) {
-  .partner-logos {
-    gap: 0.8rem;
-    margin-top: 0;
-  }
+@media (max-width: 600px) {
+  ...
+
+ .partner-logos {
+  gap: 0.8rem;
+  margin-top: 0;
+}
+
+.support-label {
+  margin-top: 0.9rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.75rem;
+}
+
+.logo-martin {
+  height: 22px;
+}
+
+.logo-johnpearse {
+  height: 22px;
+}
+
+.logo-clayton {
+  height: 30px;
+}
+
+.logo-paige {
+  height: 18px;
+}
+  ...
+}
 
   .support-label {
     margin-top: 0.9rem;
@@ -382,21 +406,20 @@ input:focus-visible {
     font-size: 0.75rem;
   }
 
-  .logo-martin_logo_white.webp {
-    height: 22px;
-  }
+.logo-martin {
+  height: 22px;
+}
 
-  .logo-johnpearse_logo_gold.png {
-    height: 22px;
-  }
+.logo-johnpearse {
+  height: 22px;
+}
 
-  .logo-clayton-logo.png {
-    height: 30px;
-  }
+.logo-clayton {
+  height: 30px;
+}
 
-  .logo-paige-capo-logo-white.png {
-    height: 18px;
-  }
+.logo-paige {
+  height: 18px;
 }
 
   /* Let singles wrap into rows and stay centered */
@@ -418,11 +441,6 @@ input:focus-visible {
 .release img {
   width: 140px;
   height: 140px;
-}
-
-.release span {
-  max-width: 140px;
-  font-size: 0.75rem;
 }
 
 .release span {
