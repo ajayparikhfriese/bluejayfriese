@@ -344,15 +344,20 @@ input:focus-visible {
   }
 
   /* fixed footprint per tile (prevents “one title makes one column wider”) */
-  .release {
-    width: 78px;
-    flex: 0 0 78px;
-  }
+ .release {
+  width: 140px;
+  flex: 0 0 140px;
+}
 
-  .release img {
-    width: 64px;
-    height: 64px;
-  }
+.release img {
+  width: 140px;
+  height: 140px;
+}
+
+.release span {
+  max-width: 140px;
+  font-size: 0.75rem;
+}
 
   .release span {
     font-size: 0.65rem;
