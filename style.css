@@ -42,19 +42,7 @@ body {
 ===================== */
 
 .content {
-  position: relative;
-  z-index: 1;
-  min-height: 100vh;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 3.5rem 1rem 1.25rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
-
-  text-align: center;
 }
 
 .new-hero {
@@ -68,11 +56,7 @@ body {
 }
 
 .footer {
-  position: static;
-  transform: none;
-  width: 100%;
   margin-top: auto;
-  padding-top: 1.25rem;
 }
 
 /* Booking email */
@@ -437,4 +421,15 @@ body {
     flex-wrap: wrap;
     row-gap: 0.75rem;
   }
+
+   .links {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem 0.9rem;
+  row-gap: 0.45rem;
+}
+
+.links a {
+  font-size: 0.78rem;
+}
 }
