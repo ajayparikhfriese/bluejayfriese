@@ -139,8 +139,8 @@ h1 {
 }
 
 .release {
-  width: 200px;            /* all singles get same footprint */
-  flex: 0 0 200px;         /* prevents long title widening the column */
+  width: 170px;            /* all singles get same footprint */
+  flex: 0 0 170px;         /* prevents long title widening the column */
 
   display: flex;
   flex-direction: column;
@@ -159,8 +159,8 @@ h1 {
 }
 
 .release img {
-  width: 200px;
-  height: 200px;
+  width: 170;
+  height: 170;
   object-fit: cover;
   border-radius: 4px;
   margin-bottom: 0.35rem;
@@ -171,7 +171,7 @@ h1 {
 
 .release span {
   display: block;
-  max-width: 200px;
+  max-width: 170px;
   text-align: center;
   line-height: 1.2;
 
@@ -304,19 +304,19 @@ h1 {
 }
 
 .logo-martin {
-  height: 28px;
+  height: 32px;
 }
 
 .logo-johnpearse {
-  height: 28px;
+  height: 32px;
 }
 
 .logo-clayton {
-  height: 60px;
+  height: 80px;
 }
 
 .logo-paige {
-  height: 19px;
+  height: 24px;
 }
 /* =====================
    Focus visibility
@@ -376,19 +376,19 @@ input:focus-visible {
   }
 
   .logo-martin {
-    height: 22px;
+    height: 25px;
   }
 
   .logo-johnpearse {
-    height: 22px;
+    height: 25px;
   }
 
   .logo-clayton {
-    height: 35px;
+    height: 40px;
   }
 
   .logo-paige {
-    height: 16px;
+    height: 20px;
   }
 
   .releases {
