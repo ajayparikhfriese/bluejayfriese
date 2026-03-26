@@ -312,11 +312,11 @@ h1 {
 }
 
 .logo-clayton {
-  height: 40px;
+  height: 60px;
 }
 
 .logo-paige {
-  height: 22px;
+  height: 19px;
 }
 /* =====================
    Focus visibility
@@ -384,11 +384,11 @@ input:focus-visible {
   }
 
   .logo-clayton {
-    height: 30px;
+    height: 35px;
   }
 
   .logo-paige {
-    height: 18px;
+    height: 16px;
   }
 
   .releases {
