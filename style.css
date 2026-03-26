@@ -176,16 +176,17 @@ body {
 
 .footer {
   width: 100%;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: auto;
-  padding-top: 0.2rem;
+  padding-top: 0.1rem;
 }
 
 .mailing-list {
   margin-top: 0;
-  transform: translateY(-2.2rem);
+  transform: translateY(-3.6rem);
 }
 
 .mailing-list p {
@@ -246,7 +247,7 @@ body {
 }
 
 .booking {
-  margin-top: -1.65rem;
+  margin-top: -3rem;
   font-size: 0.76rem;
   opacity: 0.72;
 }
@@ -355,7 +356,7 @@ input:focus-visible {
 
   .new-hero {
     gap: 0.32rem;
-    padding-top: 23vh;
+    padding-top: 15vh;
     padding-bottom: 0;
   }
 
@@ -374,7 +375,7 @@ input:focus-visible {
 
   .releases {
     gap: 0.45rem;
-    margin-top: 0.95rem;
+    margin-top: 0.65rem;
   }
 
   .release {
@@ -396,11 +397,11 @@ input:focus-visible {
   }
 
   .footer {
-    padding-top: 0.1rem;
+    padding-top: 0.05rem;
   }
 
   .mailing-list {
-    transform: translateY(-0.8rem);
+    transform: translateY(-2rem);
   }
 
   .mailing-list p {
@@ -424,7 +425,7 @@ input:focus-visible {
   }
 
   .booking {
-    margin-top: -0.35rem;
+    margin-top: -1.45rem;
   }
 
   .booking a {
