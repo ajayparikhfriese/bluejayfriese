@@ -334,68 +334,40 @@ input:focus-visible {
 
 @media (max-width: 600px) {
 
-  /* iOS Safari + fixed bg can get weird; this helps */
   body {
     background-attachment: scroll;
   }
 
   .content {
     min-height: 100svh;
-    padding: 6.5rem 1rem 2rem; /* slightly less side pressure */
+    padding: 6.5rem 1rem 2rem;
     flex-direction: column;
     justify-content: center;
   }
 
-  /* stop desktop nudges from making mobile feel off */
   .new-hero {
     transform: none;
     gap: 1.1rem;
   }
 
   .logo {
-    width: 300px;  /* tweak to taste */
+    width: 300px;
     max-width: 90%;
     transform: none;
   }
 
-  /* THIS is the main “Help!” fix */
   .descriptor {
     max-width: 100%;
-    padding: 0 0.75rem;     /* gives breathing room so it can wrap nicely */
-    font-size: 0.78rem;     /* smaller so it doesn’t feel like a banner */
+    padding: 0 0.75rem;
+    font-size: 0.78rem;
     line-height: 1.55;
     transform: none;
   }
 
-@media (max-width: 600px) {
-  ...
-
-.partner-logos {
-  gap: 0.8rem;
-  margin-top: 0;
-}
-
-.support-label {
-  margin-top: 0.9rem;
-  margin-bottom: 0.4rem;
-  font-size: 0.75rem;
-}
-
-.logo-martin {
-  height: 22px;
-}
-
-.logo-johnpearse {
-  height: 22px;
-}
-
-.logo-clayton {
-  height: 30px;
-}
-
-.logo-paige {
-  height: 18px;
-}
+  .partner-logos {
+    gap: 0.8rem;
+    margin-top: 0;
+  }
 
   .support-label {
     margin-top: 0.9rem;
@@ -403,50 +375,48 @@ input:focus-visible {
     font-size: 0.75rem;
   }
 
-.logo-martin {
-  height: 22px;
-}
+  .logo-martin {
+    height: 22px;
+  }
 
-.logo-johnpearse {
-  height: 22px;
-}
+  .logo-johnpearse {
+    height: 22px;
+  }
 
-.logo-clayton {
-  height: 30px;
-}
+  .logo-clayton {
+    height: 30px;
+  }
 
-.logo-paige {
-  height: 18px;
-}
+  .logo-paige {
+    height: 18px;
+  }
 
-  /* Let singles wrap into rows and stay centered */
   .releases {
     display: flex;
-    flex-wrap: wrap;        /* ✅ key */
+    flex-wrap: wrap;
     justify-content: center;
     gap: 0.9rem;
     margin-top: 0.9rem;
     transform: none;
   }
 
-  /* fixed footprint per tile (prevents “one title makes one column wider”) */
- .release {
-  width: 140px;
-  flex: 0 0 140px;
-}
+  .release {
+    width: 140px;
+    flex: 0 0 140px;
+  }
 
-.release img {
-  width: 140px;
-  height: 140px;
-}
+  .release img {
+    width: 140px;
+    height: 140px;
+  }
 
-.release span {
-  max-width: 140px;
-  font-size: 0.75rem;
-  line-height: 1.15;
-  white-space: normal;
-  overflow-wrap: anywhere;
-}
+  .release span {
+    max-width: 140px;
+    font-size: 0.75rem;
+    line-height: 1.15;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
 
   .footer {
     position: static;
@@ -459,4 +429,3 @@ input:focus-visible {
     row-gap: 0.75rem;
   }
 }
-
