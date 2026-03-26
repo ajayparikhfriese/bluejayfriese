@@ -30,7 +30,7 @@ body {
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.46);
+  background: rgba(0, 0, 0, 0.54);
   z-index: 0;
   pointer-events: none;
 }
