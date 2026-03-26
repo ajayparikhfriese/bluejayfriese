@@ -186,7 +186,7 @@ body {
 
 .mailing-list {
   margin-top: 0;
-  transform: translateY(-1rem);
+  transform: translateY(-.6rem);
 }
 
 .mailing-list p {
