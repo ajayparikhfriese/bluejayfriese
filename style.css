@@ -425,23 +425,24 @@ input:focus-visible {
     padding: 0.62rem 0.82rem;
   }
 
-  .booking {
-    margin-top: -1.45rem;
-  }
+ .booking {
+  margin-top: 0.3rem;
+  font-size: 0.64rem;
+  opacity: 0.5;
+}
 
   .booking a {
     font-size: 0.7rem;
   }
 
-  .support-label {
-    margin-top: auto;
-    margin-bottom: 0.26rem;
-    font-size: 0.68rem;
-  }
+.support-label {
+  margin-bottom: 0.22rem;
+}
 
-  .partner-logos {
-    gap: 0.55rem;
-  }
+.partner-logos {
+  gap: 0.5rem;
+  margin-bottom: 0;
+}
 
   .logo-martin {
     height: 21px;
