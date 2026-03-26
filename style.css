@@ -55,22 +55,20 @@ body {
   text-align: center;
 }
 
-/* HERO — breathing room added */
 .new-hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.8rem; /* tune this once */
-  transform: translateY(2rem);
+  gap: 1.35rem;
+  transform: translateY(0.6rem);
 }
 
-
-/* FOOTER */
 .footer {
   position: absolute;
-  bottom: 1.2rem;
+  bottom: 0.6rem;
   left: 50%;
   transform: translateX(-50%);
+  width: calc(100% - 2rem);
 }
 
 /* Booking email */
@@ -284,8 +282,15 @@ h1 {
   opacity: 0.7;
 }
 
+.support-label {
+  margin-top: 1rem;
+  margin-bottom: 0.45rem;
+  font-size: 0.8rem;
+  opacity: 0.78;
+}
+
 .partner-logos {
-  margin-top: 1.2rem;
+  margin-top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -299,15 +304,21 @@ h1 {
   display: block;
 }
 
-@media (max-width: 600px) {
-  .partner-logos {
-    gap: 0.9rem;
-    margin-top: 1rem;
-  }
+/* individual logo tuning */
+.logo-martin_logo_white.webp {
+  height: 28px;
+}
 
-  .partner-logos img {
-    height: 24px;
-  }
+.logo-johnpearse_logo_gold.png {
+  height: 28px;
+}
+
+.logo-clayton-logo.png {
+  height: 40px;
+}
+
+.logo-paige-capo-logo-white.png {
+  height: 22px;
 }
 
 /* =====================
@@ -359,6 +370,35 @@ input:focus-visible {
     transform: none;
   }
 
+   @media (max-width: 600px) {
+  .partner-logos {
+    gap: 0.8rem;
+    margin-top: 0;
+  }
+
+  .support-label {
+    margin-top: 0.9rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.75rem;
+  }
+
+  .logo-martin_logo_white.webp {
+    height: 22px;
+  }
+
+  .logo-johnpearse_logo_gold.png {
+    height: 22px;
+  }
+
+  .logo-clayton-logo.png {
+    height: 30px;
+  }
+
+  .logo-paige-capo-logo-white.png {
+    height: 18px;
+  }
+}
+
   /* Let singles wrap into rows and stay centered */
   .releases {
     display: flex;
@@ -385,13 +425,13 @@ input:focus-visible {
   font-size: 0.75rem;
 }
 
-  .release span {
-    font-size: 0.65rem;
-    max-width: 78px;
-    line-height: 1.15;
-    white-space: normal;
-    overflow-wrap: anywhere;
-  }
+.release span {
+  max-width: 140px;
+  font-size: 0.75rem;
+  line-height: 1.15;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
 
   .footer {
     position: static;
