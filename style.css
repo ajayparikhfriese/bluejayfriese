@@ -142,8 +142,8 @@ h1 {
 }
 
 .release {
-  width: 250px;            /* all singles get same footprint */
-  flex: 0 0 250px;         /* prevents long title widening the column */
+  width: 200px;            /* all singles get same footprint */
+  flex: 0 0 200px;         /* prevents long title widening the column */
 
   display: flex;
   flex-direction: column;
@@ -162,8 +162,8 @@ h1 {
 }
 
 .release img {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 4px;
   margin-bottom: 0.35rem;
@@ -174,7 +174,7 @@ h1 {
 
 .release span {
   display: block;
-  max-width: 250px;
+  max-width: 200px;
   text-align: center;
   line-height: 1.2;
 
@@ -335,7 +335,7 @@ input:focus-visible {
   }
 
   /* Let singles wrap into rows and stay centered */
-  .singles {
+  .releases {
     display: flex;
     flex-wrap: wrap;        /* ✅ key */
     justify-content: center;
@@ -345,17 +345,17 @@ input:focus-visible {
   }
 
   /* fixed footprint per tile (prevents “one title makes one column wider”) */
-  .single {
+  .release {
     width: 78px;
     flex: 0 0 78px;
   }
 
-  .single img {
+  .release img {
     width: 64px;
     height: 64px;
   }
 
-  .single span {
+  .release span {
     font-size: 0.65rem;
     max-width: 78px;
     line-height: 1.15;
