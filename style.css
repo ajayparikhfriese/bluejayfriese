@@ -186,7 +186,7 @@ body {
 
 .mailing-list {
   margin-top: 0;
-  transform: translateY(-0.8rem);
+  transform: translateY(-1rem);
 }
 
 .mailing-list p {
@@ -247,9 +247,10 @@ body {
 }
 
 .booking {
-  margin-top: -1.25rem;
-  font-size: 0.76rem;
-  opacity: 0.72;
+  margin-top: 0.45rem;
+  margin-bottom: 0;
+  font-size: 0.72rem;
+  opacity: 0.58;
 }
 
 .booking a {
