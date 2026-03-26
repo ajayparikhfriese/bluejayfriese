@@ -304,6 +304,24 @@ h1 {
   display: block;
 }
 
+.partner-logos a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  line-height: 0;
+}
+
+.partner-logos a:hover {
+  opacity: 0.85;
+}
+
+.partner-logos a:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.6);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
 .logo-martin {
   height: 30px;
 }
