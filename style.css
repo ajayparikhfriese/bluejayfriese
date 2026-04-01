@@ -200,7 +200,7 @@ body {
   grid-template-columns: 92px 170px;
   column-gap: 0.82rem;
   align-items: start;
-  transform: translateX(26px);
+  transform: translateX(27px);
 }
 
 .show-date {
@@ -209,7 +209,7 @@ body {
   font-size: 0.66rem;
   line-height: 1.12;
   font-weight: 400;
-   transform: translateX(29px);
+   transform: translateX(26px);
 }
 
 .show-details {
